@@ -1,13 +1,222 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: rgb(222, 254, 248);
+  height: 5rem;
+}
+
+.Navbar ul li{
+  font-size: 22px;
+  font-weight: 400;
+  padding: 8px;
+  margin: 0 20px;
+}
+
+.Navbar ul li a{
+  text-decoration: none;
+  color: rgb(162, 33, 154);
+}
+
+.Home, .About, .Increment, .Todolist, .User{
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 27px;
+    text-align: center;
+}
+
+.Increment button{
+  width: 100%;
+  height: 3rem;
+  font-size: 19px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* ------------------ Home --------------- */
+
+
+.Home h1{
+  /* font-size: 40px; */
+  font-weight: 300;
+}
+/* ------------------ Cards -------------- */
+.Cards{
+  width: 80%;
+  min-height: 60vh;
+  font-size: 22px;
+  text-align: left;
+  margin: auto;
+  margin-top: 15px;
+  }
+  .Cards h1{
+    text-align: center;
+    font-weight: 250;
+    padding: 8px;
+    font-size: 36px;
+  }
+  .Card-Items{
+    padding: 8px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    }
+    .card{
+      height: 450px;
+      margin: 2px;
+      border: 1px solid rgb(174, 168, 168);
+      border-radius: 12px;
+      flex-basis: 0;
+
+}
+.card img{
+  width: 320px;
+  height: 60%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.card h3{
+  font-size: 22px;
+  font-weight: 250;
+  padding: 5px;
+}
+.card p{
+  font-size: 15px;
+  font-style: italic;
+  padding: 5px;
+}
+
+
+/* ---------------- Increment -------------- */
+
+.Increment h1{
+  margin: 32px auto;
+  font-weight: 250;
+}
+.Increment Button{
+  margin: 12px auto;
+  display: block;
+  width: 40%;
+}
+
+
+
+
+
+/* ---------------- ToDo List --------------- */
+
+.Todolist{
+  max-height: 200px;
+
+}
+.Todolist h2{
+  margin: 25px;
+  font-size: 57px;
+  font-weight: 250;
+}
+.Todolist h3{
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 250;
+}
+
+
+.List{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px auto;
+}
+
+.Todolist input {
+  width: 80%;
+  height: 50px;
+  margin: 10px;
+  padding: 2px 8px;
+  font-size: 18px;
+  border-radius: 7px;
+}
+.Todolist button {
+  width: 13%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 9px;
+  background: rgb(163, 240, 163);
+  /* color: white; */
+  font-size: 18px;
+}
+
+.Todolist ul {
+  align-items: center;
+}
+.Todolist ul li {
+  font-size: 22px;
+  text-align: left;
+  align-items: center;
+}
+.Todolist ul button{
+  width: 120px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 9px;
+  background: rgb(240, 136, 136);
+  color: white;
+  font-size: 18px;
+}
+
+
+
+/* -----------------------Dynamic Routes ----------------------- */
+
+.DynamicRoutes{
+  width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    /* transform: translate(-50%,-50%); */
+    font-size: 27px;
+    text-align: center;
+  }
+.DynamicRoutes h3{
+  font-size: 28px;
+  font-weight: 300;
+}
+.DynamicRoutes ul{
+  list-style: none;
+  margin-top: 22px;
+}
+
+.DynamicRoutes ul li{
+  padding: 7px;
+}
+
+/* ------------------User-------------- */
+.User{
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 27px;
+  text-align: center;
+}
+.User img{
+  max-width: 200px;
+  max-height: 300px;
+  margin-top: 20px;
 }
