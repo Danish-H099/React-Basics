@@ -46,10 +46,37 @@
 
 /* ------------------ Home --------------- */
 
+.Home{
+  margin-top: 120px;
+}
 
 .Home h1{
-  /* font-size: 40px; */
-  font-weight: 300;
+  font-size: 42px;
+  font-weight: 250;
+}
+
+.homediv{
+  padding: 12px;
+  margin-top: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.homediv div{
+  padding: 4px;
+  margin-top: 2px;
+}
+.homediv div h1{
+  font-size: 22px;
+  font-weight: 250;
+  margin-left: -38px;
+}
+
+.homediv div ul li{
+  font-size: 17px;
 }
 /* ------------------ Cards -------------- */
 .Cards{
