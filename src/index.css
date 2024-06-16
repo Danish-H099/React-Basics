@@ -48,6 +48,12 @@
 
 .Home{
   margin-top: 120px;
+  background-image: linear-gradient(rgba(247, 247, 247, 0), rgba(22, 33, 44, 0)), url("components/Home/image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 140px;
+  background-position-x: 60%;
+  background-position-y: 40%;
 }
 
 .Home h1{
