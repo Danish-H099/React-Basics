@@ -14,7 +14,7 @@ const CardsData = [
     },
     {
         id: 3,
-        img: "https://th.bing.com/th/id/OIG4.LgUj9FIjzUbdTSMn0mRg",
+        img: "https://pixlr.com/images/generator/photo-generator.webp",
         name: "Paragraph 3",
         tell: "One of the key advantages of using cards is their ability to create a visual hierarchy. Cards can encapsulate distinct pieces of content, making it easier for users to differentiate and navigate through information. "
     },
